@@ -13,7 +13,12 @@ function TodoList() {
   return (
     <div className='todo-list-container'>
       <h1>Todo List</h1>
-      
+      <div className='todo-input'>
+        <input 
+          placeholder='Add New Todo'
+        />
+        <button>Add</button>
+      </div>
       <ul>{todos.map((todo) => (
         <Todo key={todo.id} todo={todo}/>
       ))}</ul>
