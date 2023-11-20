@@ -10,20 +10,30 @@
 .todo-list-container h1 {
     text-align: center;
 }
-.todo-item {
-    border: 1px solid black;
+ /* Style the todo list items */
+ .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
     padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 10px;   
-}
-.todo-item button {
-    color: white;
-    background-color: lightsalmon;
+  }
+  
+  /* Style the delete button */
+  .todo-item button {
+    background-color: #e74c3c;
+    color: #fff;
     border: none;
-    border-radius: 3px;
-    font-size: 14px;
-}
-.todo-item button:hover {
-    background-color: rgb(165, 60, 19);
-    
-}
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px; /* Increase padding for the button */
+    transition: background-color 0.3s; /* Add a smooth background color transition */
+  }
+  
+  /* Change the button style when hovering */
+  .todo-item button:hover {
+    background-color: #c0392b;
+  }
