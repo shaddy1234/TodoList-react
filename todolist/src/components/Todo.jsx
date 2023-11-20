@@ -1,12 +1,13 @@
 import React from 'react'
 
-function Todo({todo}) {
+function Todo({ todo }) {
   
   return (
-    <div>
-      <li>{todo}</li>
-    </div>
+    <>
+      <li>{todo.name}</li>
+    </>
   )
 }
 
 export default Todo
+

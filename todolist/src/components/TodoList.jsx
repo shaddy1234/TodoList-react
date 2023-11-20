@@ -7,14 +7,18 @@ function TodoList() {
     {id: 2, name:"Write Code"},
     {id: 3, name:"Read a Novel"}
   ])
+  const [newTodo, setNewTodo]=useState('')
+
   return (
     <div>
       <h1>ToDo List</h1>
       <ul>{todos.map((todo) => (
-        <Todo key={todo.id} todo={todos.name}/>
+        <Todo key={todo.id} todo={todo}/>
       ))}</ul>
     </div>
   )
 }
 
-export default TodoList
+export default TodoList;
+
+
