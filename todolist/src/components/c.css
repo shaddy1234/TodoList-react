@@ -16,4 +16,14 @@
     border-radius: 5px;
     margin-top: 10px;   
 }
-
+.todo-item button {
+    color: white;
+    background-color: lightsalmon;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.todo-item button:hover {
+    background-color: rgb(165, 60, 19);
+    
+}
