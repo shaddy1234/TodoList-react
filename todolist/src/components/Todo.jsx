@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-function Todo() {
-
-    const [todo, setTodo] = useEffect({
-        TodoName: "",
-        DueDate: ""
-    })
+function Todo({todo}) {
+  
   return (
     <div>
-      
+      <li>{todo}</li>
     </div>
   )
 }
