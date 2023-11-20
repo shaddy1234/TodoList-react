@@ -12,11 +12,12 @@ function TodoList() {
 
   return (
     <div className='todo-list-container'>
-      <h1>ToDo List</h1>
+      <h1>Todo List</h1>
+      
       <ul>{todos.map((todo) => (
         <Todo key={todo.id} todo={todo}/>
       ))}</ul>
-    </div>
+    </div> 
   )
 }
 
