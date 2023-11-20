@@ -10,7 +10,7 @@
 .todo-list-container h1 {
     text-align: center;
 }
- /* Style the todo list items */
+ /* Styling the todo list items */
  .todo-item {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     border-radius: 5px;
   }
   
-  /* Style the delete button */
+  /* Styling the delete button */
   .todo-item button {
     background-color: #e74c3c;
     color: #fff;
@@ -37,3 +37,28 @@
   .todo-item button:hover {
     background-color: #c0392b;
   }
+   /* Style the input and button */
+   .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .todo-input button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
