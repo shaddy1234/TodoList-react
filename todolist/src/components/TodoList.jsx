@@ -10,14 +10,23 @@ function TodoList() {
   ])
   const [newTodo, setNewTodo]=useState('')
 
+  const AddTodo = () => {
+    if(newTodo.trim() === '')return;
+      const todo = {id:Date.now(), name:newTodo}
+      setTodos([...todos, todo])
+      setNewTodo('')
+  }
+
   return (
     <div className='todo-list-container'>
       <h1>Todo List</h1>
       <div className='todo-input'>
         <input 
           placeholder='Add New Todo'
+          value={newTodo}
+          onChange={(e)=> setNewTodo(e.target.value)}
         />
-        <button>Add</button>
+        <button onClick={AddTodo}>Add</button>
       </div>
       <ul>{todos.map((todo) => (
         <Todo key={todo.id} todo={todo}/>
