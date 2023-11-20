@@ -4,9 +4,9 @@ import './c.css'
 
 function TodoList() {
   const [todos, setTodos]= useState([
-    {id: 1, name:"Watch Movie"},
-    {id: 2, name:"Write Code"},
-    {id: 3, name:"Read a Novel"}
+    {id: 1, name:"Learn React"},
+    {id: 2, name:"Write React Code"},
+    {id: 3, name:"Take Coffee"}
   ])
   const [newTodo, setNewTodo]=useState('')
 
